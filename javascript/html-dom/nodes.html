@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nodes</title>
+</head>
+<body>
+
+    <h2>JavaScript HTML DOM</h2>
+
+    <p>hello world</p>
+    <p>hello norway</p>
+    <p>Click the button to change the color of all p elements.</p>
+
+    <button onclick="myFunction()">try it</button>
+
+    <script>
+    function myFunction() {
+        let myCollection = document.getElementsByTagName('p');
+        for (let i = 0; i < myCollection.length; i++) {
+            myCollection[i].style.color = 'orange';
+        }
+    }
+    </script>
+
+
+    <!-- <div id="div1">
+        <p id="p1">this is a para</p>
+        <p id="p2">this is another para</p>
+    </div>
+
+    <script>
+        let para = document.createElement('p');
+        let node = document.createTextNode('This is new');
+        para.appendChild(node);
+
+        let element = document.getElementById('div1');
+        element.appendChild(para);
+    </script> -->
+
+</body>
+</html>
